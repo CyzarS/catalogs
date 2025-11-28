@@ -74,6 +74,6 @@ jobs:
             fi
 
             cd infra
-            docker-compose pull catalogs
-            docker-compose up -d catalogs
-            docker image prune -f
+            sudo docker-compose pull catalogs
+            sudo docker-compose up -d catalogs
+            sudo docker image prune -f
